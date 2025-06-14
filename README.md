@@ -1,4 +1,4 @@
-# Random_Password_Generator2
+# key-phrase-generator
 
 ### Como funciona?
  <p>Este projeto oferece uma ferramenta robusta para a <strong>geração de senhas seguras e personalizáveis.
