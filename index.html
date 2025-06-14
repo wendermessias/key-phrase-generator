@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Fortes</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crie sua Senha Forte</h1>
+        <div class="input-group">
+            <label for="palavra1" required>Palavra 1:</label>
+            <input type="text" id="palavra1" placeholder="Digite uma palavra">
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+        <div class="input-group">
+            <label for="palavra2">Palavra 2:</label>
+            <input type="text" id="palavra2" placeholder="Digite outra palavra">
+        </div>
+        <div class="input-group">
+            <label for="palavra3">Palavra 3 (opcional):</label>
+            <input type="text" id="palavra3" placeholder="Opcional">
+        </div>
+        <div class="button-group">
+            <button id="embaralharBtn">Gerar Senha</button>
+            <!-- Limpar Palavras -->
+
+            <button type="button" class="buttonRefresh">
+              <img id="RefreshIcons" src="/icons/atualizar.png" alt="Ícone de limpar">
+              Limpar campos
+            </button>
+              
+              <button id="themeToggle">Alternar Tema</button>
+        </div>
+        <div class="output">
+            <label for="senhaGerada">Senha Gerada:</label>
+            <input type="text" id="senhaGerada" readonly placeholder="Senha gerada">
+            
+            <button id="copiarBtn">Copiar</button>
+        </div>
+
+        <div class="footer_copyright"> 
+            <a 
+              href="https://github.com/wendermessias" 
+              target="_blank" rel="noopener noreferrer">&#169 2025 all rights reserved to...
+            </a>
+        </div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
