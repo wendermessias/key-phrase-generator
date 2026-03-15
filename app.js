@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Seleção dos elementos do DOM
     const palavra1Input = document.getElementById('palavra1');
     const palavra2Input = document.getElementById('palavra2');
-    const palavra3Input = document.getElementById('palavra3');
     const embaralharBtn = document.getElementById('embaralharBtn');
     const limparBtn = document.querySelector('.buttonRefresh');
     const senhaGeradaInput = document.getElementById('senhaGerada');
@@ -31,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function gerarSenhaForte() {
         const palavra1 = palavra1Input.value.trim();
         const palavra2 = palavra2Input.value.trim();
-        const palavra3 = palavra3Input.value.trim();
 
         // Limpa qualquer mensagem de erro anterior e a oculta
         errorMessage.textContent = '';
@@ -47,9 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Constrói a base da senha com as palavras fornecidas
         let palavras = [palavra1, palavra2];
-        if (palavra3) {
-            palavras.push(palavra3);
-        }
 
         let senhaBase = palavras.join('-');
         let senhaEmbaralhada = embaralhar(senhaBase);
